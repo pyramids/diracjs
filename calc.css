@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'bpdotsunicasebold';
+    src: url('res/BPdotsUnicaseBold-webfont.eot');
+    src: url('res/BPdotsUnicaseBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('res/BPdotsUnicaseBold-webfont.woff') format('woff'),
+         url('res/BPdotsUnicaseBold-webfont.ttf') format('truetype'),
+         url('res/BPdotsUnicaseBold-webfont.svg#bpdotsunicasebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media (min-width: 40em) {
+    html { padding-left: 1em; padding-right: 1em }
+    body { padding: 0px }
+}
+
+#calcoutput::before {
+    content: " = "
+}
+#calcoutput.error::before {
+    content: " = Error"
+}
+
+.gone {
+    display: none;
+}
+
+.example {
+    font-family: 'bpdotsunicasebold', monospace;
+}
+
+#calcinput, #calcoutput {
+    font-family: 'bpdotsunicasebold', monospace;
+    font-size: 1.5em;
+}
+#calcinput {
+    width: 100%;
+}
+
+.error {
+    color: red;
+}
+
+.ket, .bra {
+    color: #0000b0;
+}
+
+.i {
+}
+
+
+
+.spacer {
+    border: 0;
+    padding: 1em;
+    margin: 1em;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
