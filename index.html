@@ -54,7 +54,8 @@
       browser's console. You may want to try replicating
       this webpage's functionality:
       <pre><code>
-	dirac('|0&gt;').toString()
+	  dirac('|0&gt;').toString()
+	  dirac('cos(pi/6)|010&gt; + i|001&gt;').normalize().toString()
       </code></pre>
       In code, you can assert that ket and bra vectors are really what you think they are:
       <pre><code>
@@ -79,7 +80,8 @@
 	      crossorigin="anonymous"></script>
       <!-- my own work -->
       <!-- <script src="need.min.js"></script> -->
-      <script src="dirac.js"></script>
-      <script src="calc.js"></script>
+    </p>
+    <script src="dirac.js"></script>
+    <script src="calc.js"></script>
   </body>
 </html>
